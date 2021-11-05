@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  matrix-deepl-bot:
+    container_name: matrix-deepl-bot
+    build: .
+    environment:
+      HOMESERVER_URL: "https://matrix.org"
+      ACCESS_TOKEN: "<access_token_here>"
+    restart: always
